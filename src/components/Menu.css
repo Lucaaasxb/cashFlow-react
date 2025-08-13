@@ -1,0 +1,45 @@
+:root {
+  --verde-claro: #88f26b;
+  --verde-medio: #66a649;
+  --verde-escuro: #34592a;
+  --preto: #0d0d0d;
+  --azul: #1f6feb;
+  --font-titulo: 'Inter', sans-serif;
+  --font-texto: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--verde-escuro);
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: var(--azul);
+}
+
+.navbar .btn {
+  background-color: var(--preto);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}

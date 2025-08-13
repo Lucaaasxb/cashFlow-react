@@ -1,0 +1,18 @@
+:root {
+  --verde-claro: #88f26b;
+  --verde-medio: #66a649;
+  --verde-escuro: #34592a;
+  --preto: #0d0d0d;
+  --azul: #1f6feb;
+  --font-titulo: 'Inter', sans-serif;
+  --font-texto: 'Roboto', sans-serif;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: auto;
+}

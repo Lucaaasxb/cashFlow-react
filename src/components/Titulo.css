@@ -1,0 +1,53 @@
+:root {
+  --verde-claro: #88f26b;
+  --verde-medio: #66a649;
+  --verde-escuro: #34592a;
+  --preto: #0d0d0d;
+  --azul: #1f6feb;
+  --font-titulo: 'Inter', sans-serif;
+  --font-texto: 'Roboto', sans-serif;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem 2rem;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+
+.hero .texto h1 {
+  font-size: 2.6rem;
+  font-family: var(--font-titulo);
+  margin-bottom: 1rem;
+  color: var(--verde-escuro);
+}
+
+.hero .texto span {
+  color: var(--verde-claro);
+}
+
+.hero .texto p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.hero .cta {
+  background-color: var(--preto);
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.hero .cta:hover {
+  background-color: #154bb8;
+}
+
+.hero .imagem img {
+  max-width: 100%;
+}
