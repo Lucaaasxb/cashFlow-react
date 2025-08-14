@@ -1,9 +1,10 @@
+import Titulo from "../components/Titulo"
 
 function Home() {
   return (
-    <Layout>
-      <Titulo />
-    </Layout>
+   <>
+   <Titulo />
+   </>
   )
 }
 export default Home

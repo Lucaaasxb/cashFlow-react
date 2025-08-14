@@ -7,8 +7,8 @@ function Menu() {
                 <header class="navbar">
                     <p>CashFlow</p>
                     <nav>
-                        <a href="sobre.html">Quem Somos</a>
-                        <a href="login.html" class="btn">Entrar</a>
+                        <a href="/sobre">Quem Somos</a>
+                        <a href="/login" class="btn">Entrar</a>
                     </nav>
                 </header>
 

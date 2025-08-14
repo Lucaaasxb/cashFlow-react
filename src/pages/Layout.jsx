@@ -7,13 +7,13 @@ import Menu from '../components/Menu.jsx'
 
 
 
+
 function Layout() {
 
 
   return (
     <>
      <div className='container'>
-        <Titulo />
         <Menu />
         <Outlet />
       </div>

@@ -17,10 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="sobre" element={<Sobre />} />
+          <Route path="Sobre" element={<Sobre />} />
           <Route path="*" element={<NoPages />} />
-          <Route path="CalcMetros" element={<CalcMetros />} />
-          <Route path="CalcCentimetros" element={<CalcCentimetros />} />
         </Route>
       </Routes>
     </BrowserRouter>
