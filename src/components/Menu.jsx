@@ -4,11 +4,11 @@ function Menu() {
     return (
         <>
             <nav >
-                <header class="navbar">
+                <header className="navbar">
                     <p>CashFlow</p>
                     <nav>
-                        <a href="/sobre">Quem Somos</a>
-                        <a href="/login" class="btn">Entrar</a>
+                        <a href="/Sobre">Quem Somos</a>
+                        <a href="/login" className="btn">Entrar</a>
                     </nav>
                 </header>
 
