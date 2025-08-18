@@ -83,11 +83,6 @@ function Sobre() {
 
         <div className="container mt-5 pt-5">
 
-          <section className="footer-info">
-            <p>&copy; 2025 CashFlow. Todos os direitos reservados.</p>
-          </section>
-          <main></main>
-          <div></div>
 
         </div>
       </div>
