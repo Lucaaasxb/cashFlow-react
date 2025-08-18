@@ -11,12 +11,8 @@ function Login() {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        if (!validarEmail(email) || !senha) {
-            alert('Verifique os campos preenchidos.')
-            return
-        }
-        alert('Login realizado com sucesso!')
-        window.location.href = '/dashboard'
+    if (!email || !senha) { alert('Preencha email e senha.'); return }
+    window.location.href = '/dashboard'
     }
 
     return (
