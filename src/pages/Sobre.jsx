@@ -8,7 +8,7 @@ function Sobre() {
           <section className="intro">
             <h1>Quem Somos</h1>
             <p>Bem-vindo ao <strong>CashFlow</strong>, sua plataforma inteligente para gestão financeira pessoal. Nossa missão é empoderar você a conquistar seus objetivos, com praticidade, segurança e inovação.</p>
-            <img src="/public/equipe.png" alt="Equipe CashFlow" style={{ maxWidth: "320px", borderRadius: "12px", margin: "1rem auto", display: "block" }} />
+            <img src="/equipe.png" alt="Equipe CashFlow" style={{ maxWidth: "320px", borderRadius: "12px", margin: "1rem auto", display: "block" }} />
           </section>
           <section className="valores">
             <h2>Nossos Valores</h2>
@@ -86,8 +86,8 @@ function Sobre() {
           <section className="footer-info">
             <p>&copy; 2025 CashFlow. Todos os direitos reservados.</p>
           </section>
-          <main />
-          <div />
+          <main></main>
+          <div></div>
 
         </div>
       </div>

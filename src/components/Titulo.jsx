@@ -1,4 +1,5 @@
 import './Titulo.css'
+import { Link } from 'react-router-dom'
 
 function Titulo() {
     return (
@@ -10,10 +11,10 @@ function Titulo() {
                     <h1>Organize sua vida financeira com o <span>CashFlow</span></h1>
                     <p>CashFlow é o seu assistente financeiro pessoal, projetado para simplificar o gerenciamento de suas finanças.</p>
 
-                    <a href="login.html" className="cta">Comece agora</a>
+                    <Link to="/login" className="cta">Comece agora</Link>
                 </section>
                 <section className="imagem">
-                    <img src="/public/finace.png" alt="homem com tablet" />
+                    <img src="/finace.png" alt="homem com tablet" />
                 </section>
             </main>
         </>

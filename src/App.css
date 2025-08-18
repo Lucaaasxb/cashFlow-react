@@ -1,0 +1,5 @@
+tbody tr.destaque { animation: rowflash .8s ease; }
+@keyframes rowflash { from{ background:#e8f5e9 } to{ background:transparent } }
+.entrada { color:#2e7d32; font-weight:600 }
+.saida { color:#e53935; font-weight:600 }
+body.escuro { background:#111; color:#eee }
