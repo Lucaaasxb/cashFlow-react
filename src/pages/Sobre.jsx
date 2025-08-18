@@ -26,27 +26,27 @@ function Sobre() {
             <p>O CashFlow é feito para todos: estudantes, profissionais, famílias e qualquer pessoa que deseja organizar e transformar sua vida financeira.</p>
             <p>Conte conosco para trilhar o caminho do sucesso financeiro!</p>
           </section>
-          <div className="container" style={{display:"flex", gap:"2rem", flexWrap:"wrap", justifyContent:"center", marginBottom:"2rem"}}>
-            {/* <div className="card-equipe" style="background:#fff; border-radius:12px; box-shadow:0 2px 8px #0001; padding:1rem; min-width:180px; text-align:center;">
-              <img src="/public/lucas.jpeg" alt="Lucas Fagundes" style="border-radius:50%; width:80px; height:80px; object-fit:cover; margin-bottom:0.5rem;" />
+          <div className="container" style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center", marginBottom: "2rem" }}>
+            <div className="card-equipe" style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 2px 8px #0001', padding: '1rem', minWidth: '180px', textAlign: 'center' }}>
+              <img src="/lucas.jpeg" alt="Lucas Fagundes" style={{ borderRadius: '50%', width: '80px', height: '80px', objectFit: 'cover', marginBottom: '0.5rem' }} />
               <h3>Lucas Fagundes</h3>
               <p>Desenvolvedor Front-end</p>
             </div>
-            <div className="card-equipe" style="background:#fff; border-radius:12px; box-shadow:0 2px 8px #0001; padding:1rem; min-width:180px; text-align:center;">
-              <img src="/public/maria.jpeg" alt="Maria Silva" style="border-radius:50%; width:80px; height:80px; object-fit:cover; margin-bottom:0.5rem;" />
+            <div className="card-equipe" style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 2px 8px #0001', padding: '1rem', minWidth: '180px', textAlign: 'center' }}>
+              <img src="/maria.jpeg" alt="Maria Silva" style={{ borderRadius: '50%', width: '80px', height: '80px', objectFit: 'cover', marginBottom: '0.5rem' }} />
               <h3>Maria Silva</h3>
               <p>Especialista em Finanças</p>
             </div>
-            <div className="card-equipe" style="background:#fff; border-radius:12px; box-shadow:0 2px 8px #0001; padding:1rem; min-width:180px; text-align:center;">
-              <img src="/public/joão.jpeg" alt="João Pereira" style="border-radius:50%; width:80px; height:80px; object-fit:cover; margin-bottom:0.5rem;" />
+            <div className="card-equipe" style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 2px 8px #0001', padding: '1rem', minWidth: '180px', textAlign: 'center' }}>
+              <img src="/joão.jpeg" alt="João Pereira" style={{ borderRadius: '50%', width: '80px', height: '80px', objectFit: 'cover', marginBottom: '0.5rem' }} />
               <h3>João Pereira</h3>
               <p>Designer UX/UI</p>
             </div>
-            <div className="card-equipe" style="background:#fff; border-radius:12px; box-shadow:0 2px 8px #0001; padding:1rem; min-width:180px; text-align:center;">
-              <img src="/public/ana.jpeg" alt="Ana Costa" style="border-radius:50%; width:80px; height:80px; object-fit:cover; margin-bottom:0.5rem;" />
+            <div className="card-equipe" style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 2px 8px #0001', padding: '1rem', minWidth: '180px', textAlign: 'center' }}>
+              <img src="/ana.jpeg" alt="Ana Costa" style={{ borderRadius: '50%', width: '80px', height: '80px', objectFit: 'cover', marginBottom: '0.5rem' }} />
               <h3>Ana Costa</h3>
               <p>Gerente de Produto</p>
-            </div> */}
+            </div>
           </div>
           <section className="valores">
             <h2>Nossa História</h2>
