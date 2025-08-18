@@ -1,4 +1,5 @@
-import { useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import { Store } from '../utils/store'
 
 function Metas(){
 	const [show, setShow] = useState(false)
@@ -22,6 +23,17 @@ function Metas(){
 		},0)
 		alert('Meta cadastrada com sucesso!')
 	}
+
+	useEffect(()=>{
+		const saved = Store.getMetas()
+		if(Array.isArray(saved) && saved.length){
+			setMetas(saved)
+		}
+	},[])
+
+	useEffect(()=>{
+		Store.setMetas(metas)
+	},[metas])
 
 	return (
 		<main style={{padding:'2rem'}}>
