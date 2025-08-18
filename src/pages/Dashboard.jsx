@@ -1,4 +1,17 @@
+import { useEffect, useMemo, useState } from 'react'
+import { Store } from '../utils/store'
+
 function Dashboard(){
+	const [tx, setTx] = useState([])
+
+	useEffect(()=>{
+		setTx(Store.getTransacoes())
+	},[])
+
+	const saldo = useMemo(()=>{
+		return tx.reduce((acc, t)=> acc + (t.tipo==='Receita' ? t.valor : -t.valor), 0)
+	},[tx])
+
 	return (
 		<main style={{padding:'2rem'}}>
 			<h2>Olá, seja bem-vindo ao seu Painel Financeiro!</h2>
@@ -6,7 +19,7 @@ function Dashboard(){
 			<section style={{display:'flex', gap:'2rem', flexWrap:'wrap', marginTop:'2rem'}}>
 				<div style={{background:'#fff', borderRadius:'12px', boxShadow:'0 2px 8px #0001', padding:'1.5rem', minWidth:220, flex:1}}>
 					<h3>Saldo Atual</h3>
-					<p><strong>R$ 0,00</strong></p>
+					<p><strong>R$ {saldo.toFixed(2).replace('.', ',')}</strong></p>
 					<span style={{color:'#888', fontSize:'.95rem'}}>Atualize suas receitas e despesas para visualizar seu saldo.</span>
 				</div>
 				<div style={{background:'#fff', borderRadius:'12px', boxShadow:'0 2px 8px #0001', padding:'1.5rem', minWidth:220, flex:1}}>
