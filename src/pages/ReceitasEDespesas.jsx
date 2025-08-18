@@ -1,5 +1,6 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import * as XLSX from 'xlsx'
+import { Store } from '../utils/store'
 
 function ReceitasEDespesas(){
 	const [items, setItems] = useState([])
@@ -23,6 +24,17 @@ function ReceitasEDespesas(){
 		}, 0)
 		alert('Transação cadastrada com sucesso!')
 	}
+
+	useEffect(()=>{
+		const saved = Store.getTransacoes()
+		if(Array.isArray(saved) && saved.length){
+			setItems(saved)
+		}
+	},[])
+
+	useEffect(()=>{
+		Store.setTransacoes(items)
+	},[items])
 
 	const exportarExcel = () => {
 		const data = [ ['Data','Descrição','Tipo','Valor'], ...items.map(i=>[
