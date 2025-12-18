@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import * as XLSX from 'xlsx';
+
 
 import { Store } from '../utils/store'
 
