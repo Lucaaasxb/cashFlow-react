@@ -13,7 +13,7 @@ import ReceitasEDespesas from './pages/ReceitasEDespesas.jsx'
 import Metas from './pages/Metas.jsx'
 import Personalizacao from './pages/Personalizacao.jsx'
 import Assistente from './pages/Assistente.jsx'
-
+import Cadastro from './pages/cadastro.jsx'
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
           <Route path="receitas-despesas" element={<ReceitasEDespesas />} />
           <Route path="metas" element={<Metas />} />
           <Route path="assistente" element={<Assistente />} />
+          <Route path="cadastro" element={<Cadastro />} />
           {/* COMMITADO POR CAUSA DO BUG DE FONTE E TEMA DO SITE */}
           {/* QUANDO ENTRA NA PÁGINA ELE MUDA PARA UMA FONTE PADRÃO */}
           {/* E QUANDO TROCA O TEMA O CSS NÃO ACOMPANHA MUDANÇA */}

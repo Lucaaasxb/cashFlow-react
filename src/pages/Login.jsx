@@ -11,8 +11,31 @@ function Login() {
 
     const onSubmit = (e) => {
         e.preventDefault()
-    if (!email || !senha) { alert('Preencha email e senha.'); return }
-    window.location.href = '/dashboard'
+        if (!email || !senha) { 
+            alert('Preencha email e senha.'); 
+            return 
+        }
+
+        // Buscar dados do localStorage
+        const usuarioSalvo = localStorage.getItem('cashFlowUser')
+        
+        if (!usuarioSalvo) {
+            alert('Usuário não encontrado. Faça o cadastro primeiro.');
+            window.location.href = '/cadastro'
+            return
+        }
+
+        const { email: emailSalvo, senha: senhaSalva } = JSON.parse(usuarioSalvo)
+
+        // Validar email e senha
+        if (email === emailSalvo && senha === senhaSalva) {
+            alert('Bem-vindo de volta!')
+            // Salvar token de sessão (opcional)
+            localStorage.setItem('cashFlowToken', 'logado')
+            window.location.href = '/dashboard'
+        } else {
+            alert('Email ou senha incorretos.')
+        }
     }
 
     return (
@@ -65,7 +88,7 @@ function Login() {
 
                         <button type="submit" className="botao-login" aria-label="Entrar">Entrar</button>
 
-                        <p className="criar-conta">Ainda não tem uma conta? <a href="#" style={{fontWeight:'bold', color:'#2e7d32', textDecoration:'underline'}}>Crie agora</a></p>
+                        <p className="criar-conta">Ainda não tem uma conta? <a href="/cadastro" style={{fontWeight:'bold', color:'#2e7d32', textDecoration:'underline'}}>Crie agora</a></p>
                     </form>
                     <div style={{marginTop:'1.5rem', textAlign:'center', color:'#888', fontSize:'0.95rem'}}>
                         <span>Seu acesso é seguro e protegido.</span>
